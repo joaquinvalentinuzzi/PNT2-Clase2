@@ -11,7 +11,5 @@ const personajesSimpsons = [
 { nombre: "Martin", edad: 10, rol: "Compañero de clase" } 
 ]; 
 
-personajesSimpsons.filter((personaje) => {
-    if (personaje.edad < 18) {
-        console.log(personaje);
-    }}) 
+const menoresDeEdad = personajesSimpsons.filter((personaje) => personaje.edad < 18);
+console.log(menoresDeEdad);

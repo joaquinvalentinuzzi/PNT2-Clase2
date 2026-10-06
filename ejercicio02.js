@@ -11,7 +11,5 @@ const personajesSimpsons = [
 { nombre: "Martin", edad: 10, rol: "Compañero de clase" } 
 ]; 
 
-personajesSimpsons.find((personaje) => {
-    if (personaje.nombre === "Bart") {
-        console.log(personaje);
-    }}) 
+const bart = personajesSimpsons.find((personaje) => personaje.nombre === "Bart");
+console.log(bart);
